@@ -1,0 +1,77 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-image: url(https://images.unsplash.com/photo-1529307482987-d09357b12fb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.keys {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+.key{
+  width: 75px;
+  height: 75px;
+  border: 3px solid black;
+  transition: all 0.07s;
+  background-color: rgba(128, 10, 82, 0.59);
+}
+.key kbd{
+  text-align: center;
+  font-size: 2rem;
+  font-weight:bold;
+  color: black;
+  display: block;
+  text-transform: uppercase;
+}
+.key span{
+  text-align: center;
+  font-size: 0.7rem;
+  color: orange;
+  display: block;
+  text-transform: uppercase;
+}
+.playing {
+  transform: scale(1.1);
+  border-color: rgb(226, 187, 52);
+  box-shadow: 0 0 10px rgb(226, 187, 52);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
